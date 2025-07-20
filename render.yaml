@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: samari-tech-dashboard
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GMAIL_USER
+        value: samuchim15@gmail.com
+      - key: GMAIL_PASS
+        value: uago ksxq xddu appm 
