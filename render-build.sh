@@ -5,10 +5,7 @@ echo "=== Render Build Script ==="
 echo "Node version: $(node --version)"
 echo "NPM version: $(npm --version)"
 
-echo "Installing dependencies..."
-npm ci --only=production
-
-echo "Installing dev dependencies for build..."
+echo "Installing ALL dependencies (including dev dependencies)..."
 npm ci
 
 echo "Building application..."
