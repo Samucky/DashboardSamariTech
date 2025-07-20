@@ -7,12 +7,7 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     sourcemap: false,
-    minify: 'terser',
-    rollupOptions: {
-      output: {
-        manualChunks: undefined
-      }
-    }
+    minify: true
   },
   server: {
     port: 3000,
